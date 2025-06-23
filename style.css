@@ -301,21 +301,31 @@ input[type="radio"] {
     }
 
 
-     nav {
+    @media (max-width: 600px) {
+  nav {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
   }
 
   nav .logo {
-    width: 120px; /* Slightly smaller logo */
+    width: 120px;
+    margin-bottom: 10px;
   }
 
   nav section {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
+
+  nav button {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+
 
     .email-signup {
         flex-direction: row;
